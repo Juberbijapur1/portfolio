@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juber - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.5rem;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .skill-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juber Bijapur</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Juber, a passionate web developer with expertise in creating modern, responsive, and user-friendly websites and applications. I love turning ideas into reality through clean and efficient code.</p>
+            <p>With a strong foundation in both frontend and backend technologies, I strive to deliver high-quality solutions that meet client needs and exceed expectations. I'm constantly learning and adapting to new technologies to stay at the forefront of web development.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js, Responsive Design</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, Python, Django, RESTful APIs</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Database & Tools</h3>
+                    <p>MongoDB, MySQL, Git, GitHub, VS Code</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Design & UI/UX</h3>
+                    <p>Figma, Adobe XD, Responsive Design, User Experience</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Portfolio</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern, responsive portfolio website showcasing my work and skills. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-stack e-commerce solution with user authentication, product management, and payment integration.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>Collaborative task management application with real-time updates and team collaboration features.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <p><strong>Email:</strong> <a href="mailto:juberbijapur7@gmail.com">juberbijapur7@gmail.com</a></p>
+                <p><strong>Location:</strong> Bijapur, India</p>
+                <div class="social-links">
+                    <p><strong>Connect with me:</strong></p>
+                    <a href="https://github.com/Juberbijapur1" target="_blank">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Juber Bijapur. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+</body>
+</html>
